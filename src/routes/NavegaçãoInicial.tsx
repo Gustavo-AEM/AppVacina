@@ -4,6 +4,7 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import Home from '../pages/home';
 import Main from '../pages/Loginlocal';
 import Carteira from '../pages/CriarCarteiras';
+import Cadastro from '../pages/Cadastro'
 
 const Stack = createNativeStackNavigator();
 
@@ -33,6 +34,11 @@ export default function TabRoutes() {
       component={Carteira}
       options={{ headerShown: false }}
     />
+          <Stack.Screen
+        name='Cadastro'
+        component={Cadastro}
+        options={{ headerShown: false }}
+      />
     </Stack.Navigator>
   );
 }

@@ -15,7 +15,7 @@ export default function Form() {
         "Verifique se o campo matrícula e senha estão preenchidos."
     );
 
-    function limpaCampos() {
+    function Entrar() {
         if (matricula == null) {
             createAlert();
         }else{ if (senha == null){
@@ -25,6 +25,10 @@ export default function Form() {
     }
         }
     }
+    function Cadastrar() {
+      navigation.navigate("Cadastro");
+      }
+
 
     return (
             <View style={styles.form}>
@@ -46,11 +50,11 @@ export default function Form() {
                 />
 
                 <View style={styles.botaoArea}>
-                <TouchableOpacity style={styles.botao}>
+                <TouchableOpacity style={styles.botao} onPress={() => Cadastrar()}>
                         <Text style={styles.botaoS}>Cadastrar</Text>
                     </TouchableOpacity>
                     <TouchableOpacity style={[styles.botao,styles.botaoSalvar]}
-                    onPress={() => limpaCampos()}
+                    onPress={() => Entrar()}
                 >
                     <Text style={styles.textButtonClean}>{textButton}</Text>
                     </TouchableOpacity>
