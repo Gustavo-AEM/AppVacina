@@ -4,8 +4,6 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import Home from '../pages/home';
 import Main from '../pages/Loginlocal';
 import Carteira from '../pages/CriarCarteiras';
-import Voltar from '../pages/CriarCarteiras';
-import Inicio from '../pages/Inicio';
 
 const Stack = createNativeStackNavigator();
 

@@ -1,8 +1,14 @@
 import { View,Text,TouchableOpacity,StyleSheet} from "react-native";
+import { useNavigation } from "@react-navigation/native";
 
 export default function Cateira(){
+    const navigation = useNavigation();
+
+    function Criar() {navigation.navigate("Home");
+}
+
     return(<View style={styles.Tela}> 
-        <TouchableOpacity style={styles.botao}>
+        <TouchableOpacity onPress={() => Criar()} style={styles.botao}>
         <Text>Voltar</Text>
     </TouchableOpacity>
     </View>
