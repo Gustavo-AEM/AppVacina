@@ -1,18 +1,10 @@
 import { View,Text,TouchableOpacity,StyleSheet} from "react-native";
-import { useNavigation } from "@react-navigation/native";
 
 export default function Inicio(){
-    const navigation = useNavigation();
-    
-    function Criar() {navigation.navigate("Carteira");
-    }
 
     return(
     
-    <View style={styles.Tela}>
-    <TouchableOpacity onPress={() => Criar()} style={styles.botao}>
-        <Text>mais</Text>
-    </TouchableOpacity></View>
+    <View style={styles.Tela}></View>
     )
 }
 const styles = StyleSheet.create({
