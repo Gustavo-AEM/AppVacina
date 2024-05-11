@@ -1,11 +1,11 @@
 import { View, StyleSheet } from 'react-native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
-import Home from '../pages/home';
-import Main from '../pages/Loginlocal';
-import local from '../pages/Carteira';
-import Cadastro from '../pages/Cadastro'
-import Carteira from '../pages/CriarCarteiras';
+import Home from '../pages/home/home'
+import Main from '../pages/main/Loginlocal'
+import local from '../pages/vacinaCadastro/Carteira'
+import Cadastro from '../pages/cadastro/Cadastro'
+import Informações from '../pages/Informações/Informações';
 
 const Stack = createNativeStackNavigator();
 
@@ -38,6 +38,11 @@ export default function TabRoutes() {
           <Stack.Screen
         name='Cadastro'
         component={Cadastro}
+        options={{ headerShown: false }}
+      />
+      <Stack.Screen
+        name='Informações'
+        component={Informações}
         options={{ headerShown: false }}
       />
     </Stack.Navigator>

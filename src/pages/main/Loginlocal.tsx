@@ -1,7 +1,7 @@
 import React from "react";
 import { View } from "react-native";
 
-import Form from "./FunctionsLogin";
+import Form from "../form/FunctionsLogin"
 
 export default function Main() {
     return (
